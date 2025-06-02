@@ -1,0 +1,197 @@
+/*Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Cores de fundo */
+  --cor-bg-body: #1f2941;
+  --cor-bg-nav-footer: #49aca0;
+  --cor-bg-secao: #2c3e50;
+  --cor-bg-menu-item: #73d6ba;
+  --cor-bg-botao-hover: #9ec6b2;
+  
+  /* Cores de texto */
+  --cor-texto-claro: #ffffff;
+  --cor-texto-escuro: #000000;
+  
+  /* Cores de bordas */
+  --cor-borda-principal: #ffffff;
+  --cor-borda-destaque: #ff4500;
+  --cor-borda-form: #1f2941;
+  
+  /* Cores de elementos especiais */
+  --cor-link-contato: #49aca0;
+  --cor-sombra: #0000004d;
+}
+
+body {
+  background-color: var(--cor-bg-body);
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--cor-texto-claro);
+  line-height: 1.6;
+}
+.menu {
+  background-color: var(--cor-bg-nav-footer);
+  color: var(--cor-texto-escuro);
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+header {
+  font-weight: bold;
+  font-size: 24px;
+}
+#foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  border: 3px solid var(--cor-borda-principal);
+}
+.menu-lista {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.menu-lista li a {
+  text-decoration: none;
+  padding: 5px 5px;
+  border: var(--cor-bg-body) 2px solid;
+  border-radius: 30px;
+  margin-right: 20px;
+  background-color: var(--cor-bg-menu-item);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+#sobre {
+  background-color: var(--cor-bg-secao);
+  padding: 20px;
+  border: var(--cor-borda-principal) 2px solid;
+  border-radius: 10px;
+  margin: 30px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+.sobre-mim-conteudo {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.projeto-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+#projetos h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.projeto-card {
+  background-color: var(--cor-bg-secao);
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--cor-sombra);
+}
+.projeto-card p {
+  color: var(--cor-texto-escuro);
+}
+
+#habilidades {
+  background-color: var(--cor-bg-secao);
+  padding: 20px;
+  border: var(--cor-borda-principal) 2px solid;
+  border-radius: 10px;
+  margin: 30px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+.habilidades-lista {
+  list-style: none;
+}
+#contato {
+  background-color: var(--cor-bg-secao);
+  padding: 20px;
+  border: var(--cor-borda-principal) 2px solid;
+  border-radius: 10px;
+  margin: 30px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+.contato-lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contato-lista li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.contato-lista [target="_blank"] {
+  text-decoration: none;
+  color: var(--cor-link-contato);
+  display: block;
+  text-align: center;
+}
+.entre-em-contato {
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-nome {
+  margin-top: 10px;
+}
+.form-email {
+  margin-top: 10px;
+}
+.form-mensagem {
+  width: auto;
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--cor-borda-form) 2px solid;
+  border-radius: 10px;
+}
+.botao-enviar {
+  color: var(--cor-texto-claro);
+  margin-top: 10px;
+  background-color: var(--cor-bg-nav-footer);
+  border-radius: 10px;
+  width: 100px;
+  border: none;
+}
+.botao-enviar:hover {
+  background-color: var(--cor-bg-botao-hover);
+  color: var(--cor-texto-escuro);
+  border: var(--cor-borda-destaque) 2px solid;
+  transition: background-color 0.2s ease, color 0.2s ease-in-out, border 0.3s ease-in-out;
+}
+footer {
+  background-color: var(--cor-bg-nav-footer);
+  color: var(--cor-texto-escuro);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
