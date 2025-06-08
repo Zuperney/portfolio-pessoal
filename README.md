@@ -30,6 +30,7 @@ Este é um site de portfólio pessoal desenvolvido com HTML e CSS para exibir me
 ## Como visualizar
 
 Abra o arquivo `index.html` em qualquer navegador moderno para visualizar o site.
+Ou acesse pelo link do Gihub Pages: https://zuperney.github.io/portfolio-pessoal/
 
 ---
 
